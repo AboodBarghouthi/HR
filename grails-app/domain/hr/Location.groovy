@@ -19,7 +19,7 @@ class Location {
         buildingNumber()
     }
     static mapping = {
-        id generator: 'sequence' ,column:'location_Id' , params:[sequence:'LOCATION_SEQ'],sqlType:'number'
+        id generator: 'sequence' ,column:'location_Id' , params:[sequence:'LOCATION_SEQ'],sqlType:'integer'
     }
     @Override
     public String toString() {

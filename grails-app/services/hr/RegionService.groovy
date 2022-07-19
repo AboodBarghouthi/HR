@@ -3,6 +3,7 @@ package hr
 import grails.gorm.services.Service
 
 @Service(Region)
+
 interface RegionService {
     Region get(Serializable id)
 

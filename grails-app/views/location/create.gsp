@@ -5,13 +5,13 @@
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'location.label', default: 'Location')}" />
         <title><g:message code="default.create.label" args="[entityName]" /></title>
-        <script>
+        <g:javascript>
     function co(this_) {
         $(document).ready(function () {
             $(this_).change(function () {
-                // $('#citySelect').show();
+                $('#citySelect').show();
 
-                // alert("this_");
+                alert("this_");
                 var countryName = $(this_).val();
                 $.get("${createLink(controller:'country',action:'c')}",
                     {countryName:countryName, ajax: 'true'},
@@ -26,7 +26,7 @@
 
         });
     }
-    </script>
+    </g:javascript>
     </head>
     <body>
         <a href="#create-location" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
@@ -56,7 +56,7 @@
         <g:select id="countrySelect" from="${hr.Country.list()}" optionKey="id" optionValue="countryName" noSelection="['':'-Choose a country-']" name="country" onclick="co(this)" required="required" /><span style="color: #9a1616">*</span>
 
 
-        <g:select id="citySelect" optionKey="id" optionValue="cityName" noSelection="['':'-Choose a city-']" name="city" from="" />
+        <g:select id="citySelect" optionKey="id" optionValue="cityName" noSelection="['':'-Choose a city-']" name="city" from="${hr.City.list()}" />
         <li><label for="street">Street Name</label></li> <li>
         <input type="text" name="street" id="street" value="${location?.street}" size="50">
     </li><br>

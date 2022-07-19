@@ -3,7 +3,7 @@ dataSource:
     jmxExport: true
     driverClassName: oracle.jdbc.driver.OracleDriver
     username: "SYS as SYSDBA"
-    password: "admin"
+    password: "SYS"
 
 environments:
     development:
@@ -114,4 +114,4 @@ endpoints:
         unique-names: true
 server:
     port:
-        8180
+        8182

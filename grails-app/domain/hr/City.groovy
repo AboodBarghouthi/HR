@@ -9,7 +9,10 @@ class City {
     static constraints = {
     }
     static mapping = {
-        id generator: 'sequence' ,column:'city_Id', params:[sequence:'CITY_SEQ'],sqlType:'number'
+        id generator: 'sequence' ,
+                column:'city_Id',
+                params:[sequence:'CITY_SEQ'],
+                sqlType:'number'
     }
     @Override
     public String toString() {

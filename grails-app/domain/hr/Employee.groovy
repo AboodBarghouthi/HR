@@ -10,10 +10,10 @@ class Employee {
     String emplpoyeeDescription
     Department department
     Double netSalary
-    static belongsTo = [Person,Department]
+//    static belongsTo = [Person,Department]
 
     static constraints = {
-        personSsn()
+        phoneNumber nullable: true
         phoneNumber()
         email()
         emplpyeeTitle()

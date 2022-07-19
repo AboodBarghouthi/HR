@@ -6,5 +6,5 @@ import grails.gorm.transactions.Transactional
 class LocService {
 
     Location location = new Location()
- //   def s = location.get(Location)+getStreet().getCity().getCountry()
+//    def s = location.get(Location)+getStreet().getCity().getCountry()
 }

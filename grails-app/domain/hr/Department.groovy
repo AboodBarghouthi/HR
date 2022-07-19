@@ -10,7 +10,7 @@ class Department {
     String email
     String description
 //    ArrayList<Employee> employeeArrayList
-    static hasMany = [Employee]
+//    static hasMany = [Employee]
     static constraints = {
         departmentName()
         phoneNumber()

@@ -3,6 +3,7 @@ package hr
 import grails.gorm.services.Service
 
 @Service(Employee)
+
 interface EmployeeService {
 
     Employee get(Serializable id)

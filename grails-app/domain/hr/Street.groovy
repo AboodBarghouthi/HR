@@ -4,7 +4,7 @@ class Street {
     String streetName
     City city
 //    static belongsTo = City
-    static hasMany = [Location]
+//    static hasMany = [Location]
     static constraints = {
     }
     static mapping = {

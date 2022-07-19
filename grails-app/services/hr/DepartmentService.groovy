@@ -1,8 +1,9 @@
 package hr
-
 import grails.gorm.services.Service
 
+
 @Service(Department)
+
 interface DepartmentService {
 
     Department get(Serializable id)

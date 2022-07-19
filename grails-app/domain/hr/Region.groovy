@@ -3,7 +3,7 @@ package hr
 class Region {
     def regionService
     String regionName
-    static hasMany = [Country]
+//    static hasMany = [countries:Contry]
     static constraints = {
     }
 

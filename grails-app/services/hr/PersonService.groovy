@@ -1,8 +1,8 @@
 package hr
-
 import grails.gorm.services.Service
 
 @Service(Person)
+
 interface PersonService {
 
     Person get(Serializable id)

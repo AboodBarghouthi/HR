@@ -10,8 +10,8 @@ class Person {
     GenderEnum gender
     Date birthdate
     String description
-//    Location location
-        static hasMany = [location:Location]
+    Location location
+//        static hasMany = [location:Location]
     static constraints = {
         personSsn ()
         firstName()

@@ -1,8 +1,8 @@
 package hr
 
 import grails.gorm.services.Service
-
 @Service(Location)
+
 interface LocationService {
 
     Location get(Serializable id)
